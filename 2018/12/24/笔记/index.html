@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="二狗你变了">
 <meta property="og:description" content="hexo + github    搭建个人博客我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是怀疑。我假装无情，其实是痛恨自己的深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。 linux操作系统1:浏览器打开  https://nodejs.org ,下载10.24.2版本2:默认下载到  /root/下载    路径下">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-26T07:06:25.197Z">
+<meta property="og:updated_time" content="2018-12-26T07:55:37.836Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记">
 <meta name="twitter:description" content="hexo + github    搭建个人博客我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是怀疑。我假装无情，其实是痛恨自己的深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。 linux操作系统1:浏览器打开  https://nodejs.org ,下载10.24.2版本2:默认下载到  /root/下载    路径下">
@@ -101,9 +101,6 @@
                         <a title="Weibo" target="_blank" href="//weibo.com">
                             <i class="fa fa-weibo fa-2x"></i></a>
                     
-                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
-                            <i class="fa fa-twitter fa-2x"></i></a>
-                    
                 </div>
             </nav>
         </div>
@@ -162,11 +159,37 @@
 <p>##编译代码<br>通过hexo框架将md格式的文档转换为html+css+js<br>hexo g  编译</p>
 <h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>1：安装deploy依赖包<br> npm install hexo-deployer-git –save<br>hexo d   上传</p>
 <h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>hexo clean</p>
-<p>done:git<br>  手机地址栏访问：  用户名.github.io</p>
+<h1 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h1><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>www</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.153</td>
+</tr>
+</tbody>
+</table>
+<h2 id="创建CNAME"><a href="#创建CNAME" class="headerlink" title="创建CNAME"></a>创建CNAME</h2><p>在blog/source路径下新建一个叫CNAME的文件(不带后缀)<br>在文件内填写自己的域名，如:baidu.com<br>done:git<br>  手机地址栏访问：  用户名.github.io</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年12月26日 15:06</p>
+        <p>最后更新： 2018年12月26日 15:55</p>
         <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http://localhost:4000/2018/12/24/笔记/</a></p>
         <footer>
             <a href="http://localhost:4000">
@@ -224,7 +247,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — 二狗你变了&pic=http://localhost:4000images/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — 二狗你变了&pic=/images/blog.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -288,7 +311,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#域名绑定"><span class="post-toc-text">域名绑定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名解析"><span class="post-toc-text">域名解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建CNAME"><span class="post-toc-text">创建CNAME</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
